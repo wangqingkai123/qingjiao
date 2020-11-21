@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>青娇课堂自动登录软件</string>
+  </property>
+  <widget class="QCheckBox" name="issavenum">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>10</y>
+     <width>141</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>关闭旧窗口</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>70</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>开始序号</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="startnum">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>10000</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>50</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,5">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>账号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="username">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="psw">
+        <property name="font">
+         <font>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="openfile">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>181</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>账号密码文件</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>10</y>
+     <width>160</width>
+     <height>135</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="startbutton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>开始</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="endbutton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>结束</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="startorendlistener">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>下一个</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="zhichi">
+      <property name="text">
+       <string>软件说明</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>10</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,2">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>序号</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="num">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="filepath">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>账号开始行列</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码开始行列</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="usernamestartrow">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>46</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="pswstartrow">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>46</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>行</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>行</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="usernamestartcol">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>60</y>
+     <width>46</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="pswstartcol">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>46</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>列</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>列</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>681</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>使用说明：按空格键或者点击下一个进行登录下一个账户，按ESC或者点击结束按钮结束自动登录进程</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>10</y>
+     <width>20</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>usernamestartrow</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>pswstartrow</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pswstartrow</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>usernamestartrow</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
